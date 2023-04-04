@@ -1,0 +1,18 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, quantity INTEGER, aisle INTEGER);
+
+INSERT INTO store VALUES (1, "bananas", .59, 15, 1);
+INSERT INTO store VALUES (2, "chicken", 1.98, 5, 3);
+INSERT INTO store VALUES (3, "milk", 5.95, 16, 10);
+INSERT INTO store VALUES (4, "apple juice", 5.99, 15, 9);
+INSERT INTO store VALUES (5, "beef", 6.95, 5, 3);
+INSERT INTO store VALUES (6, "orange juice", 4.98, 15, 9);
+INSERT INTO store VALUES (7, "carrots", .60, 20, 1);
+INSERT INTO store VALUES (8, "apples", .50, 15, 1);
+INSERT INTO store VALUES (9, "oranges", .50, 15, 1);
+INSERT INTO store VALUES (10, "bread", 3.74, 35, 4);
+INSERT INTO store VALUES (11, "chips", 2.99, 35, 5);
+INSERT INTO store VALUES (12, "candy", 1.98, 20, 6);
+INSERT INTO store VALUES (13, "cheese", 4.98, 20, 7);
+INSERT INTO store VALUES (14, "spices", 8.00, 40, 8);
+INSERT INTO store VALUES (15, "household", 7.95, 50, 11);
+SELECT * FROM store WHERE price < 10 ORDER BY aisle;
